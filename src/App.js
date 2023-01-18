@@ -1,6 +1,6 @@
 import {useEffect, useState } from 'react'
 import Gallery from './components/Gallery'
-import SearchBar from './components/SearchBar'
+import Searchbar from './components/SearchBar'
 import { DataContext } from './context/DataContext'
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
 
 	return (
 		<div>
-			<SearchBar handleSearch = {handleSearch}/>
+			<Searchbar handleSearch = {handleSearch}/>
 			{message}
 			<DataContext.Provider value={data}>
 				<Gallery />
